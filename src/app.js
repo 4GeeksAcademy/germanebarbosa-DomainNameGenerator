@@ -10,11 +10,12 @@ import "./assets/img/4geeks.ico";
 let pronoun = ["the", "our", "is", "just"];
 let adj = ["great", "big", "crazy", "unvelibable", "unique"];
 let noun = ["jogger", "racoon", "dog", "website", "love", "kittycats"];
+let extension = [".com", ".net", ".co", ".us", ".es"];
 
 function getRandomDomain() {
   let domain = `${getRandomElementArray(pronoun)}${getRandomElementArray(
     adj
-  )}${getRandomElementArray(noun)}.com`;
+  )}${getRandomElementArray(noun)}${getRandomElementArray(extension)}`;
   return domain;
 }
 
